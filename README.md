@@ -173,7 +173,7 @@ Processing: 100%|█████████████████████
 
 ## Step 3. Advanced debug
 
-Advanced debug is for final app testing. In this case, import app will run with convenient GUI where you can choose which folder from Team Files do you want to import and select destination Team and Workspace where new project will be created.
+Advanced debug is for final app testing. In this case, import app will download data from Supervisely server and upload them to new project. You can use this mode to test your app before publishing it to the Ecosystem.
 
 **Output of the app in production mode:**
 
