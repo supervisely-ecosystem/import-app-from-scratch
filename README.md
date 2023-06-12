@@ -3,7 +3,7 @@ description: >-
   A step-by-step tutorial of how to create custom import Supervisely app from scratch.
 ---
 
-# Create import Supervisely app with GUI from scratch
+# Create import Supervisely app from scratch
 
 ## Introduction
 
@@ -18,7 +18,7 @@ In this tutorial, we will create a simple import app that will import images fro
 
 You can find the above demo files in the data directory of the template-import-app repo - [here](https://github.com/supervisely-ecosystem/import-app-from-scratch/blob/master/data/)
 
-<img src="https://github.com/supervisely-ecosystem/import-app-from-scratch/assets/48913536/8df75279-708d-44fa-976d-2948dbd98333">
+<img src="https://github.com/supervisely-ecosystem/import-app-from-scratch/assets/48913536/ae076053-c904-434b-a2c8-0dd01a7694ba">
 
 **We will go through the following steps:**
 
@@ -59,7 +59,13 @@ For example:
 - path on your local computer could be `/Users/admin/projects/import-app-from-scratch/results/`
 - path in the current project folder on your local computer could be `results/`
 
+Also note that all paths in Supervisely server are absolute and start from '/' symbol, so you need to specify the full path to the folder, for example `/data/my_folder/`
+
 > Don't forget to add this path to `.gitignore` to exclude it from the list of files tracked by Git.
+
+To switch between local and advanced debug modes, select appropriate debug configuration in **`Run & Debug`** menu in VS Code
+
+<img src="https://github.com/supervisely-ecosystem/import-app-from-scratch/assets/48913536/f191f0f3-43be-451a-8787-5ada0b9b74f9">
 
 ## Step 2. How to write import script
 
@@ -173,7 +179,7 @@ Processing: 100%|█████████████████████
 
 ## Step 3. Advanced debug
 
-Advanced debug is for final app testing. In this case, import app will download data from Supervisely server and upload them to new project. You can use this mode to test your app before publishing it to the Ecosystem.
+Advanced debug is for final app testing. In this case, import app will download data from Supervisely server and upload images to new project. You can use this mode to test your app before [publishing it to the Ecosystem](https://developer.supervisely.com/getting-started/cli#release-your-private-apps-using-cli).
 
 **Output of the app in production mode:**
 
